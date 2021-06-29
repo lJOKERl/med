@@ -10,7 +10,11 @@ gulp.task('stylus', function () {
 			// Заменяем текущий поток на кастомный, чтобы избежать умирания вотчера при ошибках в коде
 
 			// Подключаем плагин Stylus
-			.pipe(stylus())
+			.pipe(
+				stylus({
+					'include css': true,
+				})
+			)
 
 			.pipe(gulp.dest('./css'))
 	)
