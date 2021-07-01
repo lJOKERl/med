@@ -9,7 +9,10 @@
 			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
 			crossorigin="anonymous"
 		/>
+		<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
+		<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
 		<link rel="stylesheet" href="css/style.css" />
+		
 		<title>Заказы</title>
 	</head>
 
@@ -33,8 +36,10 @@
 				</nav>
 
 				<div class="header__buttons">
-					<button>ru</button>
-					<button>en</button>
+					<div class="lang">
+						<button>En</button>
+						<button class="active">Ru</button>	
+					</div>
 					<button class="btn btn-primary btn-primary--lite">Вход на платформу</button>
 				</div>
 			</header>
@@ -45,7 +50,7 @@
 							Инновации<br />
 							в клинических исследованиях
 						</h2>
-						<p class="slider__description main-text mb-lg font-size-24">
+						<p class="slider__description  mb-lg font-size-24">
 							Содействие в проведении IV фазы клинических исследований для фармацевтических компаний
 							и производителей медицинской техники
 						</p>
@@ -54,7 +59,7 @@
 				</div>
 
 				<div class="slider__footer">
-					<p class="font-size-16 gray-text">Нам доверяют исследования</p>
+					<p class=" gray-text">Нам доверяют исследования</p>
 					<ul class="slider_logos">
 						<li>
 							<img src="images/merk.png" alt="" />
@@ -97,21 +102,10 @@
 						<div class="card card--borderless h-100">
 							<div class="card-body">
 								<div class="row">
-									<div class="col-lg-2">
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											width="16"
-											height="16"
-											fill="currentColor"
-											class="bi bi-alarm-fill"
-											viewBox="0 0 16 16"
-										>
-											<path
-												d="M6 .5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H9v1.07a7.001 7.001 0 0 1 3.274 12.474l.601.602a.5.5 0 0 1-.707.708l-.746-.746A6.97 6.97 0 0 1 8 16a6.97 6.97 0 0 1-3.422-.892l-.746.746a.5.5 0 0 1-.707-.708l.602-.602A7.001 7.001 0 0 1 7 2.07V1h-.5A.5.5 0 0 1 6 .5zm2.5 5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5zM.86 5.387A2.5 2.5 0 1 1 4.387 1.86 8.035 8.035 0 0 0 .86 5.387zM11.613 1.86a2.5 2.5 0 1 1 3.527 3.527 8.035 8.035 0 0 0-3.527-3.527z"
-											/>
-										</svg>
+									<div class="col-lg-3 text-right">
+										<img src="images/icons/icon-1.png" class="icon" alt="">
 									</div>
-									<div class="col-lg-10">
+									<div class="col-lg-9">
 										<p class="bold title-color">Real World Evidence (RWE)</p>
 										<p class="gray-text">
 											Мы собираем и агрегируем прямые данные реальной клинической практики
@@ -125,21 +119,10 @@
 						<div class="card card--borderless h-100">
 							<div class="card-body">
 								<div class="row">
-									<div class="col-lg-2">
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											width="16"
-											height="16"
-											fill="currentColor"
-											class="bi bi-alarm-fill"
-											viewBox="0 0 16 16"
-										>
-											<path
-												d="M6 .5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H9v1.07a7.001 7.001 0 0 1 3.274 12.474l.601.602a.5.5 0 0 1-.707.708l-.746-.746A6.97 6.97 0 0 1 8 16a6.97 6.97 0 0 1-3.422-.892l-.746.746a.5.5 0 0 1-.707-.708l.602-.602A7.001 7.001 0 0 1 7 2.07V1h-.5A.5.5 0 0 1 6 .5zm2.5 5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5zM.86 5.387A2.5 2.5 0 1 1 4.387 1.86 8.035 8.035 0 0 0 .86 5.387zM11.613 1.86a2.5 2.5 0 1 1 3.527 3.527 8.035 8.035 0 0 0-3.527-3.527z"
-											/>
-										</svg>
+									<div class="col-lg-3 text-right">
+										<img src="images/icons/icon-2.png" class="icon"  alt="">
 									</div>
-									<div class="col-lg-10">
+									<div class="col-lg-9">
 										<p class="bold title-color">Фармэкономика</p>
 										<p class="gray-text">
 											Определяем эффективность и безопасность медицинских изделий и лекарственных
@@ -154,21 +137,10 @@
 						<div class="card card--borderless h-100">
 							<div class="card-body">
 								<div class="row">
-									<div class="col-lg-2">
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											width="16"
-											height="16"
-											fill="currentColor"
-											class="bi bi-alarm-fill"
-											viewBox="0 0 16 16"
-										>
-											<path
-												d="M6 .5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H9v1.07a7.001 7.001 0 0 1 3.274 12.474l.601.602a.5.5 0 0 1-.707.708l-.746-.746A6.97 6.97 0 0 1 8 16a6.97 6.97 0 0 1-3.422-.892l-.746.746a.5.5 0 0 1-.707-.708l.602-.602A7.001 7.001 0 0 1 7 2.07V1h-.5A.5.5 0 0 1 6 .5zm2.5 5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5zM.86 5.387A2.5 2.5 0 1 1 4.387 1.86 8.035 8.035 0 0 0 .86 5.387zM11.613 1.86a2.5 2.5 0 1 1 3.527 3.527 8.035 8.035 0 0 0-3.527-3.527z"
-											/>
-										</svg>
+									<div class="col-lg-3 text-right">
+										<img src="images/icons/icon-3.png" class="icon"  alt="">
 									</div>
-									<div class="col-lg-10">
+									<div class="col-lg-9">
 										<p class="bold title-color">Patient Report Outcome (PSP)</p>
 										<p class="gray-text">
 											Получаем и анализируем обратную связь от значимого количества пациентов
@@ -188,7 +160,7 @@
 							Оставайтесь на связи<br />
 							с мобильной платформой
 						</h2>
-						<p class="main-text mb-lg">
+						<p class=" mb-lg">
 							Пользуйтесь системой на любом цифровом устройстве, через любой браузер, а также для
 							удобства скачайте бесплатные мобильные приложения для смартфонов и планшетов
 						</p>
@@ -206,7 +178,7 @@
 				<div class="row mb-sm">
 					<div class="col-lg-6">
 						<div class="card dir-1 card--shadow h-100">
-							<div class="card-body">
+							<div class="card-body px-5 py-5">
 								<div class="row">
 									<div class="col-lg-7">
 										<p class="small_title">Клинические регистры пациентов</p>
@@ -222,7 +194,7 @@
 					</div>
 					<div class="col-lg-6">
 						<div class="card dir-2 card--shadow h-100">
-							<div class="card-body">
+							<div class="card-body px-5 py-5">
 								<div class="row">
 									<div class="col-lg-7">
 										<p class="small_title">Программы поддержки пациентов (PSP)</p>
@@ -240,7 +212,7 @@
 				<div class="row">
 					<div class="col-lg-6">
 						<div class="card dir-3 card--shadow h-100">
-							<div class="card-body">
+							<div class="card-body px-5 py-5">
 								<div class="row">
 									<div class="col-lg-8">
 										<p class="small_title">Программы лабораторной диагностики</p>
@@ -256,7 +228,7 @@
 					</div>
 					<div class="col-lg-6">
 						<div class="card dir-4 card--shadow h-100">
-							<div class="card-body">
+							<div class="card-body px-5 py-5">
 								<div class="row">
 									<div class="col-lg-8">
 										<p class="small_title">Маркетинговые исследования фармацевтического рынка</p>
@@ -275,16 +247,26 @@
 
 			<section class="block">
 				<div class="row">
-					<div class="col-lg-8">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae iure nihil rem
-						deserunt doloremque quas qui, harum ex dolorem! Facere nesciunt maxime odio, id ad quia
-						commodi omnis consectetur. Iure!
+					<div class="col-lg-9">
+						<div class="owl-carousel owl-theme" id="slider">
+							<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, excepturi minus fuga enim officiis voluptatem incidunt adipisci provident quaerat sit odit assumenda impedit, illo molestias ea molestiae, laudantium mollitia delectus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, excepturi minus fuga enim officiis voluptatem incidunt adipisci provident quaerat sit odit assumenda impedit, illo molestias ea molestiae, laudantium mollitia delectus?</div>
+							<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate voluptas rerum vitae dolores odio esse quis, impedit adipisci natus numquam! Dolores doloremque sint impedit amet fuga officia, mollitia nesciunt eligendi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, excepturi minus fuga enim officiis voluptatem incidunt adipisci provident quaerat sit odit assumenda impedit, illo molestias ea molestiae, laudantium mollitia delectus?</div>
+							<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam perferendis culpa voluptatem qui iure numquam nam quasi ullam dolorum repellat aliquid accusamus, illo quis maiores, est minima praesentium ex quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, excepturi minus fuga enim officiis voluptatem incidunt adipisci provident quaerat sit odit assumenda impedit, illo molestias ea molestiae, laudantium mollitia delectus?</div>
+							<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam perferendis culpa voluptatem qui iure numquam nam quasi ullam dolorum repellat aliquid accusamus, illo quis maiores, est minima praesentium ex quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, excepturi minus fuga enim officiis voluptatem incidunt adipisci provident quaerat sit odit assumenda impedit, illo molestias ea molestiae, laudantium mollitia delectus?</div>
+							<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam perferendis culpa voluptatem qui iure numquam nam quasi ullam dolorum repellat aliquid accusamus, illo quis maiores, est minima praesentium ex quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, excepturi minus fuga enim officiis voluptatem incidunt adipisci provident quaerat sit odit assumenda impedit, illo molestias ea molestiae, laudantium mollitia delectus?</div>
+						</div>
 					</div>
-					<div class="col-lg-4">
-						<p>Наши партнеры</p>
-						<div class="box">img</div>
-						<p>Владислав Мигицко</p>
-						<p>Исполнительный директор</p>
+					<div class="col-lg-3">
+						<div class="parnters">
+							<p class="small_title">Наши партнеры</p>
+							<div class="card">
+								<div class="card-body text-center">
+									<img src="images/allergan.png" alt="">
+								</div>
+							</div>
+							<p class="post_with_img_title">Владислав Мигицко</p>
+							<p class="font-size-14 gray-text">Исполнительный директор ООО "Аллегран СНГ САРЛ"</p>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -307,13 +289,14 @@
 										d="M6 .5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H9v1.07a7.001 7.001 0 0 1 3.274 12.474l.601.602a.5.5 0 0 1-.707.708l-.746-.746A6.97 6.97 0 0 1 8 16a6.97 6.97 0 0 1-3.422-.892l-.746.746a.5.5 0 0 1-.707-.708l.602-.602A7.001 7.001 0 0 1 7 2.07V1h-.5A.5.5 0 0 1 6 .5zm2.5 5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5zM.86 5.387A2.5 2.5 0 1 1 4.387 1.86 8.035 8.035 0 0 0 .86 5.387zM11.613 1.86a2.5 2.5 0 1 1 3.527 3.527 8.035 8.035 0 0 0-3.527-3.527z"
 									/>
 								</svg>
-								<p class="small_title">
+								<p class="small_title title_height">
 									Регистр пациентов старше 80 лет с острым коронарным синдромом
 								</p>
 								<p class="gray-text">
 									Многоцентровое исследование для определения эпидемиологических характеристик и
 									клинических особенностей пациентов с различными степенями тугоухости в России.
 								</p>
+								<button class="btn btn-primary btn-primary--lite mb-sm">О проекте</button>
 							</div>
 						</div>
 					</div>
@@ -332,11 +315,12 @@
 										d="M6 .5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H9v1.07a7.001 7.001 0 0 1 3.274 12.474l.601.602a.5.5 0 0 1-.707.708l-.746-.746A6.97 6.97 0 0 1 8 16a6.97 6.97 0 0 1-3.422-.892l-.746.746a.5.5 0 0 1-.707-.708l.602-.602A7.001 7.001 0 0 1 7 2.07V1h-.5A.5.5 0 0 1 6 .5zm2.5 5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5zM.86 5.387A2.5 2.5 0 1 1 4.387 1.86 8.035 8.035 0 0 0 .86 5.387zM11.613 1.86a2.5 2.5 0 1 1 3.527 3.527 8.035 8.035 0 0 0-3.527-3.527z"
 									/>
 								</svg>
-								<p class="small_title">Исследовательская программа по пациентам с COVID-19</p>
+								<p class="small_title title_height">Исследовательская программа по пациентам с COVID-19</p>
 								<p class="gray-text">
 									Исследование характеристик пациента, эффективности и безопасности лекарственного
 									лечения в условиях реальной клинической практики.
 								</p>
+								<button class="btn btn-primary btn-primary--lite mb-sm">О проекте</button>
 							</div>
 						</div>
 					</div>
@@ -355,11 +339,12 @@
 										d="M6 .5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H9v1.07a7.001 7.001 0 0 1 3.274 12.474l.601.602a.5.5 0 0 1-.707.708l-.746-.746A6.97 6.97 0 0 1 8 16a6.97 6.97 0 0 1-3.422-.892l-.746.746a.5.5 0 0 1-.707-.708l.602-.602A7.001 7.001 0 0 1 7 2.07V1h-.5A.5.5 0 0 1 6 .5zm2.5 5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5zM.86 5.387A2.5 2.5 0 1 1 4.387 1.86 8.035 8.035 0 0 0 .86 5.387zM11.613 1.86a2.5 2.5 0 1 1 3.527 3.527 8.035 8.035 0 0 0-3.527-3.527z"
 									/>
 								</svg>
-								<p class="small_title">База данных пациентов с демиелинизирующими заболеваниями</p>
+								<p class="small_title title_height">База данных пациентов с демиелинизирующими заболеваниями</p>
 								<p class="gray-text">
 									Для совершенствования и организации эффективной помощи больным с рассеянным
 									склерозом и активизации научно-исследовательских работ по данной проблематике.
 								</p>
+								<button class="btn btn-primary btn-primary--lite mb-sm">О проекте</button>
 							</div>
 						</div>
 					</div>
@@ -372,33 +357,103 @@
 			</section>
 
 			<section class="block">
-				<h2 class="title_2">Актуальные новости</h2>
+				<h2 class="subtitle">Актуальные новости</h2>
 				<div class="row">
 					<div class="col-lg-8">
-						<div class="row">
-							<div class="col-lg-8">
-								<div class="fake_img"></div>
+						<div class="row mt-sm">
+							<div class="col-lg-7">
+								<div class="last_post">
+									<img src="images/news_img.png" class="last_post__image"></img>
+									<div class="post_with_img__content">
+										<p class=" post_with_img_title">Участие InMedikum в форуме «Открытые инновации 2020»</p>
+										<p class="font-size-14 gray-text">12 июня 2021</p>
+									</div>
+								</div>
 							</div>
-							<div class="col-lg-4">
+							<div class="col-lg-5">
 								<div class="row">
-									<div class="log-lg-12">1</div>
+									<div class="log-lg-12">
+										<div class="post_with_img">
+											<img src="images/news_img.png" class="post_with_img__image"></img>
+											<div class="post_with_img__content">
+												<p class=" post_with_img_title">Участие InMedikum в форуме «Открытые инновации 2020»</p>
+												<p class="font-size-14 gray-text">12 июня 2021</p>
+											</div>
+										</div>
+									</div>
 								</div>
+
 								<div class="row">
-									<div class="log-lg-12">2</div>
+									<div class="log-lg-12">
+										<div class="post_with_img">
+											<img src="images/news_img.png" class="post_with_img__image"></img>
+											<div class="post_with_img__content">
+												<p class=" post_with_img_title">Участие InMedikum в форуме «Открытые инновации 2020»</p>
+												<p class="font-size-14 gray-text">12 июня 2021</p>
+											</div>
+										</div>
+									</div>
 								</div>
+
 								<div class="row">
-									<div class="log-lg-12">3</div>
+									<div class="log-lg-12">
+										<div class="post_with_img">
+											<img src="images/news_img.png" class="post_with_img__image"></img>
+											<div class="post_with_img__content">
+												<p class=" post_with_img_title">Участие InMedikum в форуме «Открытые инновации 2020»</p>
+												<p class="font-size-14 gray-text">12 июня 2021</p>
+											</div>
+										</div>
+									</div>
 								</div>
+								
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-lg-12 box">123</div>
+							<div class="col-lg-12">
+								<div class="subscription">
+									<div class="row">
+										<div class="col-lg-5">
+											<p class="small_title">Подпишитесь сейчас!</p>
+											<p>Только самые актуальные новости индустрии и ничего больше.</p>
+										</div>
+										<div class="col-lg-7">
+											<div class="subscription__input">
+												<input type="text" placeholder="Введите ваш e-mail">
+												<button class="btn btn-primary">Подписаться<sup>*</sup></button>
+											</div>
+											<p class="font-size-13"><sup class="astriks">*</sup>Нажимая на кнопку Вы соглашаетесь с <a href="#">Политикой конфиденциальности</a></p>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="col-lg-4">
 						<div class="card">
-							<div class="card-body">
-								<h4 class="title_4">Новости индустрии</h4>
+							<div class="card-body px-5 py-4">
+								<h4 class="small_title mb-4">Новости индустрии</h4>
+								<div class="single_post">
+									<p>Открытие международного форума «Открытые инновации 2020»</p>
+									<p class="font-size-14 gray-text">12 июня 2021</p>
+								</div>
+								<div class="single_post">
+									<p>Открытие международного форума «Открытые инновации 2020»</p>
+									<p class="font-size-14 gray-text">12 июня 2021</p>
+								</div>
+								<div class="single_post">
+									<p>Открытие международного форума «Открытые инновации 2020»</p>
+									<p class="font-size-14 gray-text">12 июня 2021</p>
+								</div>
+								<div class="single_post">
+									<p>Открытие международного форума «Открытые инновации 2020»</p>
+									<p class="font-size-14 gray-text">12 июня 2021</p>
+								</div>
+								<div class="single_post">
+									<p>Открытие международного форума «Открытые инновации 2020»</p>
+									<p class="font-size-14 gray-text">12 июня 2021</p>
+								</div>
+								<button class="btn btn-primary btn-primary--lite w-100 mt-sm">Все новости</button>
 							</div>
 						</div>
 					</div>
@@ -406,99 +461,230 @@
 			</section>
 
 			<section class="block">
-				<h2 class="title_2">
-					Digital-решения для ваших исследований от InMedicum<sup>&reg;</sup> это &ndash;
-				</h2>
-				<div class="row">
-					<div class="col-lg-4">
-						<div class="icon_block">
-							<div class="icon_block__icon">1</div>
-							<div class="icon_block__text">
-								<p><b>lorem ipsum</b></p>
-								<p>
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rem nemo libero
-									perferendis natus beatae voluptates modi.
-								</p>
-							</div>
-						</div>
-						<div class="icon_block"></div>
-						<div class="icon_block"></div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-lg-4">
-						<div class="icon_block">
-							<div class="icon_block__icon">1</div>
-							<div class="icon_block__text">
-								<p><b>lorem ipsum</b></p>
-								<p>
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rem nemo libero
-									perferendis natus beatae voluptates modi.
-								</p>
-							</div>
-						</div>
-						<div class="icon_block"></div>
-						<div class="icon_block"></div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-lg-4">
-						<div class="icon_block">
-							<div class="icon_block__icon">1</div>
-							<div class="icon_block__text">
-								<p><b>lorem ipsum</b></p>
-								<p>
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rem nemo libero
-									perferendis natus beatae voluptates modi.
-								</p>
-							</div>
-						</div>
-						<div class="icon_block"></div>
-						<div class="icon_block"></div>
-					</div>
-				</div>
-
-				<button class="btn btn-primary btn-primary--lite btn-lg">О компании InMedicum</button>
-			</section>
-			<footer class="footer">
 				<div class="row">
 					<div class="col-lg-6">
+						<h2 class="subtitle">
+							Digital-решения для ваших исследований от InMedicum<sup>&reg;</sup> это &ndash;
+						</h2>
 						<div class="row">
-							<div class="col-lg-6">лого</div>
 							<div class="col-lg-6">
-								<ul class="social">
-									<li>1</li>
-									<li>2</li>
-									<li>3</li>
-									<li>4</li>
-								</ul>
+								<div class="digital">
+									<div class="digital__icon">1</div>
+									<div class="digital__text">
+										<p class="black-title">Digital-инновации</p>
+										<p>
+											Современные передовые технологии с использованием собственных разработок
+										</p>
+									</div>
+								</div>
 							</div>
 						</div>
+		
 						<div class="row">
-							<div class="col-lg-12">
-								<p>
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aliquid corrupti
-									quam facere. Quo ipsam cupiditate totam explicabo optio.
-								</p>
+							<div class="col-lg-6">
+								<div class="digital">
+									<div class="digital__icon">2</div>
+									<div class="digital__text">
+										<p class="black-title">Эффективность процессов</p>
+										<p>
+											Высокая скорость принятия решений, решения задач и реализации проектов
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+		
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="digital">
+									<div class="digital__icon">3</div>
+									<div class="digital__text">
+										<p class="black-title">Открытые коммуникации</p>
+										<p>
+											Свобода передачи информации между профессионалами индустрии
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+		
+						<button class="btn btn-primary btn-primary--lite btn-lg mt-lg">О компании InMedicum</button>
+					</div>
+				</div>
+			</section>
+			<section class="news">
+				<div class="breadcrumbs">Главная - новости</div>
+				<header class="news__header">
+					<div class="row">
+						<div class="col-lg-6">
+							<h1 class="title">
+								Минкомсвязь России внесло платформу InMedicum.Online в единый реестр российского ПО
+							</h1>
+							<div class="share">
+								<div>
+									<a class="font-size-16" href="#">Новости компании</a>
+									<p class="font-size-14">14 июня 2021</p>
+								</div>
+								<img src="" alt="">
+							</div>
+						</div>
+						<div class="col-lg-6"></div>
+					</div>
+					<div class="news__header__nav">
+						<div class="news__header__nav__left">
+							<div class="digital__icon"><</div>
+							<div>Минкомсвязь России внесло платформу InMedicum.Online</div>
+						</div>
+						<div class="news__header__nav__right">
+							
+							<div>Минкомсвязь России внесло платформу InMedicum.Online в единый реестр российского ПО</div>
+							<div class="digital__icon" style="margin-left: 25px; margin-right: 0;">></div>
+						</div>
+					</div>
+				</header>
+				<div class="row">
+					<div class="col-lg-9">
+						<div class="news__content">
+							<h2>Lorem ipsum dolor sit amet, consectetur </h2>
+							<h3>Lorem ipsum dolor sit amet, consectetur </h3>
+							<h4>Lorem ipsum dolor sit amet, consectetur </h4>
+
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi alias beatae neque quod fugit asperiores sunt, a ratione dicta, aspernatur doloremque facilis explicabo fuga voluptas ab accusamus distinctio illum nulla.</p>
+
+							<p>Lorem <a href="#">ipsum dolor</a> sit amet consectetur adipisicing elit. Officia nobis error, sequi non debitis inventore, laudantium cupiditate praesentium molestiae, eligendi repudiandae fugit ducimus laborum nostrum? Est non unde saepe nemo.</p>
+						</div>
+						<ul>
+							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, molestias accusamus voluptatum, adipisci nam veniam odit ratione itaque accusantium numquam aperiam est dolores! Dolores omnis tenetur deleniti. Ut, error nobis.</li>
+							<li>link</li>
+							<li>link</li>
+						</ul>
+						<ol>
+							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, molestias accusamus voluptatum, adipisci nam veniam odit ratione itaque accusantium numquam aperiam est dolores! Dolores omnis tenetur deleniti. Ut, error nobis.</li>
+							<li>link</li>
+							<li>link</li>
+							<li>link</li>
+						</ol>
+		
+						<figure>
+							<img src="https://d2sr9p9v571tfz.cloudfront.net/wp-content/uploads/2019/09/data-scientist.jpg">
+							<figcaption>Лягушка</figcaption>
+						</figure>
+		
+						<table>
+							<tr>
+								<th>Наименование</th>
+								<th>Значение 1</th>
+								<th>Значение 2</th>
+							</tr>
+							<tr>
+								<td>01</td>
+								<td>02</td>
+								<td>03</td>
+							</tr>
+							<tr>
+								<td>01</td>
+								<td>02</td>
+								<td>03</td>
+							</tr>
+							<tr>
+								<td>01</td>
+								<td>02</td>
+								<td>03</td>
+							</tr>
+						</table>
+
+						<blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos autem ipsum harum unde vel magnam. Placeat repudiandae reprehenderit blanditiis quisquam aliquam fugiat omnis? Tempora pariatur inventore libero minus, velit quod.</blockquote>
+
+						<div class="files">
+							<a href="#" class="file">
+								<div class="digital__icon">1</div>
+								<div class="file__description">
+									<p class="black-title">Price_2021.xls</p>
+									<p class="gray-text font-size-14">213 Кб</p>
+								</div>
+							</a>
+	
+							<a href="#" class="file">
+								<div class="digital__icon">1</div>
+								<div class="file__description">
+									<p class="black-title">Price_2021.xls</p>
+									<p class="gray-text font-size-14">213 Кб</p>
+								</div>
+							</a>
+						</div>
+
+						<button class="btn btn-primary btn-primary--lite">Поделиться</button>
+						<button class="btn btn-primary btn-primary--lite">Предыдущая статья</button>
+						<button class="btn btn-primary btn-primary--lite">Следующая статья</button>
+					</div>
+					<div class="col-lg-3">
+						<div class="tags">
+							<p class="gray-text">Тэги статьи:</p>
+							<span class="btn btn-primary btn-primary--lite btn-sm">Выставки</span>
+							<span class="btn btn-primary btn-primary--lite btn-sm">РосРеестр</span>
+							<span class="btn btn-primary btn-primary--lite btn-sm">Наш успех</span>
+						</div>
+						<div class="card related-news">
+							<div class="card-body">
+								<p class="black-title">Читайте также:</p>
+								<img class="related-news__img" src="images/news_img.png" alt="">
+								<div class="post_with_img__content">
+									<p class=" post_with_img_title">Участие InMedikum в форуме «Открытые инновации 2020»</p>
+									<p class="font-size-14 gray-text">12 июня 2021</p>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-3">
-						<p>lorem ipsum dolor sit amet</p>
-						<p>+7 (123) 456-25-58 <a href="mailto:info@info.com">info@info.com</a></p>
-						<button class="btn btn-primary btn-primary--lite">Напишите нам</button>
+				</div>
+			</section>
+			<footer class="footer">
+				<div class="footer__info">
+					<div class="footer__info__top">
+						<img src="images/logo.png" class="footer__logo" alt="">
+						<ul class="social">
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+						</ul>
 					</div>
-					<div class="col-lg-3">
-						<a href="">lorem ipsum dolor sit amet</a><br />
-						<a href="">lorem ipsum dolor sit amet</a><br />
-						<a href="">lorem ipsum dolor sit amet</a><br />
-						<a href="">lorem ipsum dolor sit amet</a>
-						<p>Designed by Vika</p>
+					<div>
+						<p>
+							2021 &copy; ООО 	&laquo;ИНМЕДИКУМ&raquo;. Все права защищены.<br>
+							ИНН: 774327617. ОГРН:1187746792595.
+						</p>
+						<p>Копирование материалов сайта запрещено.<br> Дизайн сайта <span class="bold">Vika Blackit</span></p>
 					</div>
+				</div>
+
+				<div class="footer__address">
+					<p class="footer__title">Юридический адрес:</p>
+					<p>125438, Москва, г.Лихачевский 2-й пер, дом 1, строение 11, этаж 2, помещение IX ком 12Г (РМ66)</p>
+
+					<p class="footer__title">Фактический адрес:</p>
+					<p>123060, Москва, ул. Маршала Рыбалко, д.2, к.9 офис 432</p>
+
+					<p class="footer__title">Контакты:</p>
+					<p><span class="footer__tel">+7 (123) 456-25-58</span> <a href="mailto:info@info.com">info@info.com</a></p>
+				</div>
+
+				<div class="text-right">
+					<a href="#">Пользовательское соглашение/Договор оферта</a><br />
+					<a href="#">Политика конфиденциальности</a><br />
+					<a href="#">Согласие на обработку персональных данных</a><br />
+					<a href="#">Политика компании в отношении обработки</a>
+					<button class="btn btn-primary btn-primary--lite mt-lg">Напишите нам</button>
 				</div>
 			</footer>
 		</div>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script src="owlcarousel/owl.carousel.min.js"></script>
+		<script>
+			$('#slider').owlCarousel({
+					items: 1,
+					margin: 36,
+					loop: true,
+				});
+		</script>
 	</body>
 </html>
